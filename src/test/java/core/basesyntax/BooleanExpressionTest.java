@@ -23,11 +23,11 @@ public class BooleanExpressionTest {
                         boolean actualResult = expression.booleanExpression(a, b, c, d);
                         boolean expectedResult = correctBooleanExpression(a, b, c, d);
 
-                        Assert.assertEquals("Test failed with parameter: a = "
-                                + a + " b = "
-                                + b + " c = "
-                                + c + " d = "
-                                + d, actualResult, expectedResult);
+                        Assert.assertEquals(
+                                "Test failed with parameter: a = " + a + " b = " + b + " c = "
+                                        + c + " d = " + d,
+                                actualResult,
+                                expectedResult);
                     }
                 }
             }
