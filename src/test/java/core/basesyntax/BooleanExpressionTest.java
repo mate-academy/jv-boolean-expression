@@ -26,8 +26,8 @@ public class BooleanExpressionTest {
                         Assert.assertEquals(
                                 "Test failed with parameter: a = " + a + " b = " + b + " c = "
                                         + c + " d = " + d,
-                                actualResult,
-                                expectedResult);
+                                expectedResult,
+                                actualResult);
                     }
                 }
             }
