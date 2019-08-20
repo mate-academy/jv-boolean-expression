@@ -11,23 +11,13 @@ public class BooleanExpression {
      * Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        int counter = 0;
-        if (a) {
-            counter++;
-        }
-        if (b) {
-            counter++;
-        }
-        if (c) {
-            counter++;
-        }
-        if (d) {
-            counter++;
-        }
-        if (counter == 2) {
-            return true;
-        } else {
+        if ((a && b && c && d) || (!a && !b && !c && !d)) {
             return false;
         }
+        if ((a && b && c) || (!a && !b && !c) || (a && b && d) || (!a && !b && !d)
+                || (b && c && d) || (!b && !c && !d) || (a && c && d) || (!a && !c && !d)) {
+            return false;
+        }
+        return true;
     }
 }
