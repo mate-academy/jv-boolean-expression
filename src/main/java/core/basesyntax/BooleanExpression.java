@@ -11,14 +11,12 @@ public class BooleanExpression {
      * Это задание необходимо решать с использованием логических операторов.
      */
     protected boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        boolean[] bool = new boolean[]{a, b, c, d};
-        int count = 0;
-        for (int i = 0; i < 4; i++) {
-            if (bool[i]) {
-                count++;
-            }
+        if ((a & b & c) || (a & c & d) || (a & b & d) || (b & c & d)) {
+            return false;
+        } else if ((a && b) || (a && c) || (a && d)
+                || (b && c) || (b && d) || (c && d)) {
+            return true;
         }
-
-        return count == 2;
+        return false;
     }
 }
