@@ -17,8 +17,8 @@ public class BooleanExpression {
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
         Boolean[] array = {a, b, c, d};
         int count = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == true) {
+        for (Boolean i : array) {
+            if (i) {
                 count += 1;
             }
         }
