@@ -11,19 +11,6 @@ public class BooleanExpression {
      * Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        int trueValuesQ = 0;
-        if (a == true) {
-            trueValuesQ++;
-        }
-        if (b == true) {
-            trueValuesQ++;
-        }
-        if (c == true) {
-            trueValuesQ++;
-        }
-        if (d == true) {
-            trueValuesQ++;
-        }
-        return trueValuesQ == 2;
+        return !(a ^ b ^ c ^ d) && !(a && b && c && d) && (a || b || c || d);
     }
 }
