@@ -7,12 +7,18 @@ public class BooleanExpression {
      * возвращающий true, если среди четырех его аргументов ровно два истинны (любые)
      * во всех остальных случаях метод должен возвращать false.
      *
-     * Вам надо только проанализировать переданные в метод booleanExpression
+     * <p></p>Вам надо только проанализировать переданные в метод booleanExpression
      * значения (a, b, c, d) и вернуть результат.
      *
-     * Это задание необходимо решать с использованием логических операторов.
+     * <p></p>Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
+        if ((a ^ b == true) && (c ^ d == true)) {
+            return true;
+        }
+        if ((a ^ c == true) && (b ^ d == true)) {
+            return true;
+        }
         return false;
     }
 }
