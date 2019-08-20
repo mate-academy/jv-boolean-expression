@@ -13,6 +13,14 @@ public class BooleanExpression {
      * Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        return false;
+        int intA = a ? 1 : 0;
+        int intB = b ? 1 : 0;
+        int intC = c ? 1 : 0;
+        int intD = d ? 1 : 0;
+        if (intA + intB + intC + intD == 2) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
