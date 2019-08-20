@@ -1,6 +1,5 @@
 package core.basesyntax;
 
-import java.util.Arrays;
 
 public class BooleanExpression {
 
@@ -15,14 +14,10 @@ public class BooleanExpression {
      * <p>Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        Boolean[] array = {a, b, c, d};
-        int count = 0;
-        for (Boolean i : array) {
-            if (i) {
-                count += 1;
-            }
-        }
-        return (count == 2);
+        return (!a && !b && c && d) || (a && !b && !c && d)
+                || (a && b && !c && !d) || (!a && b && c && !d)
+                || (!a && b && !c && d) || (a && !b && c && !d)
+                ? true
+                : false;
     }
-
 }
