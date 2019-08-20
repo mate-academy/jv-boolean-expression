@@ -13,20 +13,8 @@ public class BooleanExpression {
      * Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        int trueCounter = 0;
-        if (a) {
-            trueCounter++;
-        }
-        if (b) {
-            trueCounter++;
-        }
-        if (c) {
-            trueCounter++;
-        }
-        if (d) {
-            trueCounter++;
-        }
-        if (trueCounter == 2) {
+        if ((a && b && !c && !d) || (a && c && !b && !d) || (a && d && !b && !c)
+                || (b && c && !a && !d) || (b && d && !a && !c) || (c && d && !a && !b)) {
             return true;
         }
         return false;
