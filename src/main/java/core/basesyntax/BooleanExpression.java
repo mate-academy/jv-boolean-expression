@@ -13,12 +13,6 @@ public class BooleanExpression {
      * <p></p>Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        if ((a ^ b == true) && (c ^ d == true)) {
-            return true;
-        }
-        if ((a ^ c == true) && (b ^ d == true)) {
-            return true;
-        }
-        return false;
+        return ((a ^ b == true) & (c ^ d == true)) | ((a ^ c == true) & (b ^ d == true));
     }
 }
