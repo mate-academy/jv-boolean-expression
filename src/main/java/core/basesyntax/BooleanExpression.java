@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class MyBooleanExpression {
+public class BooleanExpression {
     protected boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
         boolean[] array = {a && b, a && c, a && d, b && c, b && d, c && d};
         boolean[] arrayNOT = {!(a && b), !(a && c), !(a && d), !(b && c), !(b && d), !(c && d)};
