@@ -11,12 +11,6 @@ public class BooleanExpression {
      * Это задание необходимо решать с использованием логических операторов.
      */
     protected boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        if ((a & b & c) || (a & c & d) || (a & b & d) || (b & c & d)) {
-            return false;
-        } else if ((a && b) || (a && c) || (a && d)
-                || (b && c) || (b && d) || (c && d)) {
-            return true;
-        }
-        return false;
+        return !(a & b & c & d) && !(a ^ b ^ c ^ d) && !(a || b || c || d);
     }
 }
