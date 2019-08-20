@@ -1,5 +1,7 @@
 package core.basesyntax;
 
+import java.util.Arrays;
+
 public class BooleanExpression {
 
     /**
@@ -7,12 +9,20 @@ public class BooleanExpression {
      * возвращающий true, если среди четырех его аргументов ровно два истинны (любые)
      * во всех остальных случаях метод должен возвращать false.
      *
-     * Вам надо только проанализировать переданные в метод booleanExpression
+     * <p>Вам надо только проанализировать переданные в метод booleanExpression
      * значения (a, b, c, d) и вернуть результат.
      *
-     * Это задание необходимо решать с использованием логических операторов.
+     * <p>Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        return false;
+        Boolean[] array = {a, b, c, d};
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == true) {
+                count += 1;
+            }
+        }
+        return (count == 2);
     }
+
 }
