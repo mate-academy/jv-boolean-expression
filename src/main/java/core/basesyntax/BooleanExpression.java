@@ -11,20 +11,14 @@ public class BooleanExpression {
      * Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        boolean[] fillGood = {a, b, c, d};
         boolean isGood = true;
-        int count = 0;
-
-        for (int j = 0; j < 4; j++) {
-            isGood = fillGood[j];
-            if (isGood == true) {
-                count++;
-            }
-        }
-        if (count == 2) {
+        if (a == b == c && a == b == c == d) {
+            return false;
+        } else if (isGood == a && b || isGood == a && c || isGood == a && d ||
+            isGood == b && c || isGood == b && d || isGood == c && d) {
             return true;
         } else {
-            return false;
+            return  false;
         }
     }
 }
