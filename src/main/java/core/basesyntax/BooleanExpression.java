@@ -10,15 +10,17 @@ public class BooleanExpression {
      * значения (a, b, c, d) и вернуть результат.
      * Это задание необходимо решать с использованием логических операторов.
      */
-    public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
+    public static boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
         boolean isGood = true;
-        if (a == b == c && a == b == c == d) {
+        boolean result = true;
+        if (a == b == c || a == b == c == d) {
             return false;
-        } else if (isGood == a && b || isGood == a && c || isGood == a && d ||
-            isGood == b && c || isGood == b && d || isGood == c && d) {
+        } else if (isGood == a && b || isGood == a && c || isGood == a && d
+            || isGood == b && c || isGood == b && d || isGood == c && d) {
             return true;
         } else {
-            return  false;
+            result = false;
         }
+        return result;
     }
 }
