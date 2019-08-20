@@ -8,7 +8,6 @@ public class BooleanExpression {
      * во всех остальных случаях метод должен возвращать false.
      * Вам надо только проанализировать переданные в метод booleanExpression
      * значения (a, b, c, d) и вернуть результат.
-     *
      * Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
