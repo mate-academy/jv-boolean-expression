@@ -11,20 +11,9 @@ public class BooleanExpression {
      * Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        int count = 0;
-        if (a) {
-            count++;
-        }
-        if (b) {
-            count++;
-        }
-        if (c) {
-            count++;
-        }
-        if (d) {
-            count++;
-        }
-        if (count == 2) {
+        if (a && b && !c && !d || a && !b && c && !d
+                || a && !b && !c && d || !a && b && c && !d
+                || !a && b && !c && d || !a && !b && c && d) {
             return true;
         } else {
             return false;
