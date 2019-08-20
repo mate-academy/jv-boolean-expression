@@ -15,8 +15,7 @@ public class BooleanExpression {
         boolean result = true;
         if (a == b == c || a == b == c == d) {
             return false;
-        } else if ((isGood == a && b) || (isGood == a && c) || (isGood == a && d)
-            || (isGood == b && c) || (isGood == b && d) || (isGood == c && d)) {
+        } else if ((isGood == a && b) || (isGood == a && c) || (isGood == a && d) || (isGood == b && c) || (isGood == b && d) || (isGood == c && d)) {
             return true;
         } else {
             result = false;
