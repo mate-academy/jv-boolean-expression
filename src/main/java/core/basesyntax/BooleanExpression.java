@@ -11,6 +11,6 @@ public class BooleanExpression {
      * Это задание необходимо решать с использованием логических операторов.
      */
     protected boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        return !(a & b & c & d) && !(a ^ b ^ c ^ d) && !(a || b || c || d);
+        return !(a & b & c & d) && !(a ^ b ^ c ^ d) && (a || b || c || d);
     }
 }
