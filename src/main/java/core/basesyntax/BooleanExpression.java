@@ -11,12 +11,8 @@ public class BooleanExpression {
      * Это задание необходимо решать с использованием логических операторов.
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        if (a && b && !c && !d || a && !b && c && !d
+        return (a && b && !c && !d || a && !b && c && !d
                 || a && !b && !c && d || !a && b && c && !d
-                || !a && b && !c && d || !a && !b && c && d) {
-            return true;
-        } else {
-            return false;
-        }
+                || !a && b && !c && d || !a && !b && c && d);
     }
 }
