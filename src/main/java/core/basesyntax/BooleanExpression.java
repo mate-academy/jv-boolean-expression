@@ -15,8 +15,7 @@ public class BooleanExpression {
                 || (a && d && !b && !c) || (b && c && !a && !d)
                 || (b && d && !a && !c) || (c && d && !a && !b)) {
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 }
