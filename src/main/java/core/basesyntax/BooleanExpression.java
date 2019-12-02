@@ -13,6 +13,15 @@ public class BooleanExpression {
      * <p>Это задание необходимо решать с использованием логических операторов.</p>
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
+        boolean [] array = {a,b,c,d};
+        int counter = 0;
+        for (int i=0;i<array.length;i++){
+            if (array[i]==true)
+                counter ++;
+        }
+        if (counter==2)
+            return true;
+        else
         return false;
     }
 }
