@@ -12,7 +12,13 @@ public class BooleanExpression {
      *
      * <p>Это задание необходимо решать с использованием логических операторов.</p>
      */
+
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        return false;
+        int count = 0;
+        boolean[] arrBool = {a, b, c, d};
+        for (boolean e : arrBool) {
+            count += e ? 1 : 0;
+        }
+        return count == 2 ? true : false;
     }
 }
