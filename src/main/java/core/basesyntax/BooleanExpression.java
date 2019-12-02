@@ -13,17 +13,8 @@ public class BooleanExpression {
      * <p>Это задание необходимо решать с использованием логических операторов.</p>
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        boolean[] array = {a, b, c, d};
-        int counter = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == true) {
-                counter++;
-            }
-        }
-        if (counter == 2) {
-            return true;
-        } else {
-            return false;
-        }
+        boolean counter = (a ? 1 : 0) + (b ? 1 : 0) + (c ? 1 : 0) + (d ? 1 : 0) == 2;
+        return counter;
     }
 }
+
