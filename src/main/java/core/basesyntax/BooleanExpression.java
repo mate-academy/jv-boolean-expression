@@ -14,11 +14,7 @@ public class BooleanExpression {
      */
 
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        int count = 0;
-        boolean[] arrBool = {a, b, c, d};
-        for (boolean e : arrBool) {
-            count += e ? 1 : 0;
-        }
-        return count == 2 ? true : false;
+
+        return (a ^ b) && (c ^ d) || (a ^ c) && (b ^ d) || (a ^ d) && (b ^ c);
     }
 }
