@@ -16,12 +16,14 @@ public class BooleanExpression {
         boolean[] array = {a, b, c, d};
         int counter = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == true)
+            if (array[i] == true) {
                 counter++;
+            }
         }
-        if (counter == 2)
+        if (counter == 2) {
             return true;
-        else
+        } else {
             return false;
+        }
     }
 }
