@@ -13,6 +13,13 @@ public class BooleanExpression {
      * <p>Это задание необходимо решать с использованием логических операторов.</p>
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
+        int booleanCounter =0;
+        if(a)booleanCounter++;
+        if(b)booleanCounter++;
+        if(c)booleanCounter++;
+        if(d)booleanCounter++;
+        if (booleanCounter == 2)
+            return true;
         return false;
     }
 }
