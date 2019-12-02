@@ -17,8 +17,7 @@ public class BooleanExpression {
         int counter = 0;
         for (int i=0;i<array.length;i++){
             if (array[i]==true)
-                counter ++;
-        }
+                counter ++;}
         if (counter==2)
             return true;
         else
