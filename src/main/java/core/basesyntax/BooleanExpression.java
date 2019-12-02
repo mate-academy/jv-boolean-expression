@@ -14,10 +14,18 @@ public class BooleanExpression {
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
         int count = 0;
-        if (a) count += 1;
-        if (b) count += 1;
-        if (c) count += 1;
-        if (d) count += 1;
-        return count == 2;
+        if (a == true) {
+            count = count + 1;
+        }
+        if (b == true) {
+            count = count + 1;
+        }
+        if (c == true) {
+            count = count + 1;
+        }
+        if (d == true) {
+            count = count + 1;
+        }
+        return count == 2 ? true : false;
     }
 }
