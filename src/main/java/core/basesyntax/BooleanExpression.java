@@ -15,8 +15,6 @@ public class BooleanExpression {
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
 
-        return a == b && a != c && a != d
-                || a == c && a != b && a != d
-                || a == d && a != c && a != b;
+        return (a ^ b && c ^ d) || (a ^ c && b ^ d);
     }
 }
