@@ -14,7 +14,6 @@ public class BooleanExpression {
      * без использования конструкций if-else</p>
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        return (a && ((!c && !d && b) || (!b && !d && c) || (!b && !c && d)))
-                || (!a && ((b && c && !d) || (c && d && !b) || (b && d && !c)));
+        return !(a == b && b == c && c == d) & (a ^ b) == (c ^ d);
     }
 }
