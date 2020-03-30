@@ -14,6 +14,13 @@ public class BooleanExpression {
      * без использования конструкций if-else</p>
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        return false;
+        return ((a == true && b == true && c == false && d == false)
+            || (a == true && b == false && c == true && d == false)
+            || (a == true && b == false && c == false && d == true)
+            || (a == false && b == true && c == true && d == false)
+            || (a == false && b == true && c == false && d == true)
+            || (a == false && b == false && c == true && d == true)
+            || (a == false && b == true && c == false && d == true)
+            || (a == false && b == false && c == true && d == true)) ? true : false;
     }
 }
