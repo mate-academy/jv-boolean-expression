@@ -32,7 +32,7 @@ public class BooleanExpression {
             count++;
         }
 
-        if (a == 2) {
+        if (count == 2) {
             return true;
         } else {
             return false;
