@@ -1,6 +1,7 @@
 package core.basesyntax;
 
 public class BooleanExpression {
+
     /**
      * <p>Реализуйте метод booleanExpression(boolean a, boolean b, boolean c, boolean d),
      * возвращающий true, если среди четырех его аргументов ровно два истинны (любые)
