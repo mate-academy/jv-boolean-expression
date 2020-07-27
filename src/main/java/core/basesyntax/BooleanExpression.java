@@ -1,5 +1,7 @@
 package core.basesyntax;
 
+import java.util.List;
+
 public class BooleanExpression {
 
     /**
@@ -14,6 +16,12 @@ public class BooleanExpression {
      * без использования конструкций if-else</p>
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        return false;
+        int countTrue = 0;
+        int countFalse = 0;
+        for (Boolean bool : List.of(a, b, c, d)) {
+            countTrue = bool.toString().equalsIgnoreCase("true") ? countTrue + 1 : countTrue;
+            countFalse = bool.toString().equalsIgnoreCase("false") ? countFalse + 1 : countFalse;
+        }
+        return (countTrue | countFalse) == 2;
     }
 }
