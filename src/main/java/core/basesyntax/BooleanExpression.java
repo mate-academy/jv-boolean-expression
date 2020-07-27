@@ -14,6 +14,19 @@ public class BooleanExpression {
      * без использования конструкций if-else</p>
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        return false;
+        int result = 0;
+        if (a) {
+            result++;
+        }
+        if (b) {
+            result++;
+        }
+        if (c) {
+            result++;
+        }
+        if (d) {
+            result++;
+        }
+        return result == 2;
     }
 }
