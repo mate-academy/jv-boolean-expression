@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.util.stream.Stream;
-
 public class BooleanExpression {
 
     /**
@@ -16,6 +14,7 @@ public class BooleanExpression {
      * без использования конструкций if-else</p>
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        return Stream.of(a, b, c, d).filter(value -> value).count() == 2;
+
+        return ((a ^ b) && (c ^ d)) || ((a ^ c) && (b ^ d));
     }
 }
