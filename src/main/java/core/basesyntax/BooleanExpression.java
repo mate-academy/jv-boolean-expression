@@ -14,14 +14,6 @@ public class BooleanExpression {
      * без использования конструкций if-else</p>
      */
     public boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
-        int countTrue = 0;
-        int countFalse = 0;
-
-        boolean[] array = new boolean[] {a, b, c, d};
-        for (int i = 0; i < array.length; i++) {
-            countFalse = !array[i] ? countFalse + 1 : countFalse;
-            countTrue = array[i] ? countTrue + 1 : countTrue;
-        }
-        return (countTrue | countFalse) == 2;
+        return (a ^ b && c ^ d) || (a ^ d && b ^ c);
     }
 }
